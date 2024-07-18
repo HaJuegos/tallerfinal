@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UFT-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Ejercicio </title>
+        <style> 
+            body {
+                font-family: Arial, Helvetica, sans-serif;
+                margin: 20px;
+                background-color: #3c3c3c;
+                align-items: center;
+                justify-content: center;
+            }
+            table {
+                width: 50%;
+                border-collapse: collapse;
+                margin: 20px 0;
+            }
+            td, td {
+                border: 1px solid #ddd;
+                padding: 8px;
+                text-align: center;   
+            }
+            th {
+                background-color: #4DAF50;
+                color: white;
+            }
+            h1, label {
+                color: #ffffff;
+                align-self: center;
+            }
+            .gallery {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 10px;
+            }
+            .gallery img {
+                width: 200px;
+                height: auto;
+                border: 2px solid yellow;
+            }
+            a {
+                color: aqua;
+            }
+            img {
+                margin: auto;
+                border: 5px solid rgb(92, 138, 199);
+            }
+            .image-container {
+                display: flex;
+                justify-content: center;
+                width: auto;
+            }
+        </style>
+    </head>
+    <body>
+        <h1> Formulario de Contacto </h1>
+        <form action="/submit" method="post">
+            <label for="nombre"> Nombre: </label>
+            <input type="text" id="nombre" name="nombre"><br><br>
+
+            <label for="email"> Correo Electronico: </label>
+            <input type="email" id="email" name="email"><br><br>
+
+            <label for="Mensaje"> Nombre: </label>
+            <input type="Mensaje" id="Mensaje" name="Mensaje"><br><br>
+
+            <textarea name="mensaje" id="mensaje" rows="4" cols="50"></textarea><br><br>
+
+            <input type="submit" value="Enviar">
+        </form>
+    </body>
+</html>
