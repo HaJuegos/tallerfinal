@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UFT-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Git - Teoria </title>
+        <style> 
+            body {
+                font-family: Arial, Helvetica, sans-serif;
+                margin: 20px;
+                background-color: #3c3c3c;
+                align-items: center;
+                justify-content: center;
+            }
+            h1 {
+                color: #ffffff;
+                scale: 0.85;
+                align-self: center;
+            }
+            .gallery {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 10px;
+            }
+            .gallery img {
+                width: 200px;
+                height: auto;
+                border: 2px solid yellow;
+            }
+            a {
+                color: aqua;
+            }
+            img {
+                margin: auto;
+                border: 5px solid rgb(77, 119, 70);
+            }
+            .image-container {
+                display: flex;
+                justify-content: center;
+                width: auto;
+            }
+        </style>
+    </head>
+    <body>
+        <h1> ¿Que es Git? </h1>
+        <h1> Git es un sistema de control de versiones que permite a los desarrolladores gestionar y seguir los cambios en el código fuente de sus proyectos de manera colaborativa. </h1>
+        <br>
+        <h1> Instalación de Git </h1>
+        <h1> La forma más sencilla de instalar Git en sistemas operativos Windows es por medio del sitio oficial disponible en <a href="http://git-scm.com/download/win" > http://git-scm.com/download/win </a> </h1>
+        <h1> 1. Se selecciona el enlace de descarga dispuesto en la página principal. </h1>
+        <div class="image-container">
+            <img src="./imgs/image1.png" alt="img1">
+        </div>
+        <h1> 2. Una vez descargado, se ejecuta. Al principio presenta el tipo de licencia asociada al
+            programa y se da clic en aceptar y luego en el botón Next. </h1>
+        <div class="image-container">
+            <img src="./imgs/image2.png" alt="img2">
+        </div>
+        <h1> 3. Se selecciona la carpeta donde Git será instalado, por defecto se ubica en la carpeta de
+            archivos de programa. </h1>
+        <div class="image-container">
+            <img src="./imgs/image3.png" alt="img3">
+        </div>
+        <h1> 4. Luego, el instalador permite los componentes adicionales que se instalan con Git y los
+            tipos de archivos que se van a asociar. </h1>
+        <div class="image-container">
+            <img src="./imgs/image4.png" alt="img4">
+        </div>
+        <h1> 5. Ahora emerge la pregunta sobre la ubicación donde se pondrán los accesos directos. </h1>
+        <div class="image-container">
+            <img src="./imgs/image5.png" alt="img5">
+        </div>
+        <h1> 6. El instalador pregunta sobre el editor a ser usado por Git, se recomienda usar la
+            configuración por defecto, aunque para este caso se manipula directamente el sistema
+            desde una consola de comandos. </h1>
+        <div class="image-container">
+            <img src="./imgs/image6.png" alt="img6">
+        </div>
+        <h1> 7. Enseguida, el instalador pregunta cómo va a ser la forma de nombrado para cada una de
+            las ramas iniciales en repositorios nuevos, por defecto estos siempre se denominan
+            master y es la opción recomendada. </h1>
+        <div class="image-container">
+            <img src="./imgs/image7.png" alt="img7">
+        </div>
+        <h1> 8. Luego, se puede seleccionar si se desea o no usar la línea de comandos de Git. </h1>
+        <div class="image-container">
+            <img src="./imgs/image8.png" alt="img8">
+        </div>
+        <h1> 9. Ahora el instalador preguntará qué tipo de librería será utilizada para conexiones HTTPS,
+        las cuales son necesarias para hacer procesos de carga y descarga de repositorios
+        remotos. </h1>
+        <div class="image-container">
+            <img src="./imgs/image9.png" alt="img9">
+        </div>
+        <h1> 10. También, consulta cómo es la forma en la que Git va a considerar los finales de línea en
+            archivos de texto. </h1>
+        <div class="image-container">
+            <img src="./imgs/image10.png" alt="img10">
+        </div>
+        <h1> 11. Luego, pregunta por la terminal que se quiere usar con Git Bash que es una aplicación
+            para entornos Windows que permite emular la experiencia de la línea de comando de Git. </h1>
+        <div class="image-container">
+            <img src="./imgs/image11.png" alt="img11">
+        </div>
+        <h1> 12. Se puede configurar cuál es el comportamiento asociado al comando git pull, se
+            recomienda dejar opciones por defecto. </h1>
+        <div class="image-container">
+            <img src="./imgs/image12.png" alt="img12">
+        </div>
+        <h1> 13. Se debe seleccionar el ayudante de credenciales a ser configurado con Git, se recomienda
+            la opción Git Credential Manager Core, ya que este reemplaza los ayudantes de
+            credenciales previos, mejora y facilita el mantenimiento independientemente del sistema
+            operativo. </h1>
+        <div class="image-container">
+            <img src="./imgs/image13.png" alt="img13">
+        </div>
+        <h1> 14. Y, finalmente, se configuran qué características adicionales y configuraciones
+            experimentales se desean habilitar. </h1>
+        <div class="image-container">
+            <img src="./imgs/image14.png" alt="img14">
+            <img src="./imgs/image15.png" alt="img15">
+        </div>
+        <h1> 15. El proceso de instalación es muy corto y finaliza con la posibilidad de leer las notas
+            relacionadas o lanzar inmediatamente Git Bash. </h1>
+        <div class="image-container">
+            <img src="./imgs/image16.png" alt="img16">
+        </div>
+        <br>
+        <h1> Configuracion Inicial de Git </h1>
+        <h1> Para realizar una configuracion inicial de Git, necesitas hacer estas cosas: </h1>
+        <br>
+        <h1> Configuracion de usuario y Creacion de Repositorio Local </h1>
+        <h1> En el CMD, se ponen los siguientes comandos: </h1>
+        <div class="image-container"> <img src="./imgs/cap1.png" alt="cap1"> </div>
+        <div class="image-container"> <img src="./imgs/cap2.png" alt="cap2"> </div>
+        <div class="image-container"> <img src="./imgs/cap3.png" alt="cap3"> </div>
+        <h1> Con esta configuracion inicial, podras establecer tu cuenta de Git y iniciar un nuevo repositorio local de Git </h1>
+    </body>
+</html>
